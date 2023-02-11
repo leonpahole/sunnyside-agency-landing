@@ -21,7 +21,7 @@ export const NavbarMobileMenu = () => {
       <button type="button" onClick={() => setIsOpen((o) => !o)}>
         <Image src={IconHamburger} alt="Toggle menu" />
       </button>
-      <div
+      <nav
         className={`
          before:content[''] 
          absolute right-0 flex flex-col items-stretch justify-center gap-8 bg-light py-10 px-2 text-center transition-opacity 
@@ -40,7 +40,7 @@ export const NavbarMobileMenu = () => {
           <NavbarMobileLink href={link.to}>{link.name}</NavbarMobileLink>
         ))}
         <NavbarContactLink className="self-center" />
-      </div>
+      </nav>
     </div>
   );
 };
