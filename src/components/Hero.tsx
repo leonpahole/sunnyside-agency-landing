@@ -5,8 +5,16 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <div className="relative z-0">
-      <Image alt="" src={ImageHeader} sizes="100vw" />
-      <h1 className="text-center px-1 w-full font-serif uppercase text-6xl text-white absolute z-10 top-[24%] font-black tracking-wider">
+      <div className="h-screen relative overflow-hidden">
+        <Image
+          alt=""
+          src={ImageHeader}
+          sizes="100vw"
+          fill
+          className="object-cover"
+        />
+      </div>
+      <h1 className="text-center px-1 w-full font-serif uppercase text-4xl md:text-6xl text-white absolute z-10 top-[26%] md:top-[24%] font-black tracking-wider">
         We are creatives
       </h1>
       <button

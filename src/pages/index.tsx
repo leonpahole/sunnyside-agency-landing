@@ -1,5 +1,5 @@
 import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/layout/Navbar";
+import { Navbar } from "@/components/layout/navbar/Navbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <div className="h-4" />
     </>
   );
 }

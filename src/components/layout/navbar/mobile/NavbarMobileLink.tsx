@@ -5,9 +5,9 @@ interface IProps {
   children: React.ReactNode;
 }
 
-export const NavbarLink = ({ href, children }: IProps) => {
+export const NavbarMobileLink = ({ href, children }: IProps) => {
   return (
-    <Link href={href} className="font-semibold text-lg">
+    <Link href={href} className="text-xl font-semibold text-gray-100">
       {children}
     </Link>
   );

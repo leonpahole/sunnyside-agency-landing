@@ -12,6 +12,14 @@ module.exports = {
       },
       colors: {
         blue: "#24303E",
+        light: "#FFFCF8",
+        yellow: "#FBD600",
+        gray: {
+          100: "#808397",
+        },
+      },
+      borderWidth: {
+        12: "12px",
       },
     },
   },
