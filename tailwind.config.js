@@ -17,6 +17,8 @@ module.exports = {
         yellow: "#FBD600",
         gray: {
           100: "#808397",
+          200: "#A7AAAD",
+          300: "#5B636D",
         },
         link: {
           yellow: "#FAD400",
