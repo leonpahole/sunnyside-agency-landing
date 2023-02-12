@@ -1,5 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/layout/navbar/Navbar";
+import { Services } from "@/components/services/Services";
+import { ServicesData } from "@/data/services/services.data";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <div className="h-4" />
+      <Services services={ServicesData.Services} />
     </>
   );
 }

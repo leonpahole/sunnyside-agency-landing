@@ -17,6 +17,8 @@
     "arrow-body-style": "off",
     "import/no-cycle": "off",
     "react/require-default-props": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/destructuring-assignment": "off",
     "no-restricted-imports": [
       "error",
       {
