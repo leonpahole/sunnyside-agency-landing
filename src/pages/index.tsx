@@ -1,7 +1,9 @@
 import { Hero } from "@/components/Hero";
+import { ImageList } from "@/components/imageList/ImageList";
 import { Navbar } from "@/components/layout/navbar/Navbar";
 import { Services } from "@/components/services/Services";
 import { Testimonials } from "@/components/testimonials/Testimonials";
+import { ImageListData } from "@/data/imageList/imageList.data";
 import { ServicesData } from "@/data/services/services.data";
 import { TestimonialsData } from "@/data/testimonials/testimonials.data";
 import Head from "next/head";
@@ -20,6 +22,7 @@ export default function Home() {
       <Hero />
       <Services services={ServicesData.Services} />
       <Testimonials testimonials={TestimonialsData.Testimonials} />
+      <ImageList images={ImageListData.Items} />
     </>
   );
 }
