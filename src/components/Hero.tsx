@@ -1,11 +1,13 @@
 import ImageHeader from "public/images/desktop/image-header.jpg";
 import IconArrowDown from "public/images/icon-arrow-down.svg";
 import Image from "next/image";
+import Link from "next/link";
+import { MainContentId } from "@/pages";
 
 export const Hero = () => {
   return (
     <div className="relative z-0">
-      <div className="h-screen relative overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         <Image
           alt=""
           src={ImageHeader}
@@ -14,15 +16,14 @@ export const Hero = () => {
           className="object-cover"
         />
       </div>
-      <h1 className="text-center px-1 w-full font-serif uppercase text-4xl md:text-6xl text-white absolute z-10 top-[26%] md:top-[24%] font-black tracking-wider">
+      <h1 className="absolute top-[26%] w-full px-1 text-center font-serif text-4xl font-black uppercase tracking-wider text-white md:top-[24%] md:text-6xl">
         We are creatives
       </h1>
-      <button
-        type="button"
-        className="mx-auto absolute z-10 top-[45%] inset-x-0"
-      >
-        <Image alt="Scroll down to the content" src={IconArrowDown} />
-      </button>
+      <div className="absolute inset-x-0 top-[45%] z-10 flex justify-center">
+        <Link href={`#${MainContentId}`}>
+          <Image alt="Scroll down to the content" src={IconArrowDown} />
+        </Link>
+      </div>
     </div>
   );
 };

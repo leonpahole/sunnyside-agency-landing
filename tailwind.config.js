@@ -24,6 +24,10 @@ module.exports = {
           yellow: "#FAD400",
           red: "#FE7766",
         },
+        green: {
+          100: "#458D7E",
+          200: "#90D4C6",
+        },
       },
       borderWidth: {
         12: "12px",

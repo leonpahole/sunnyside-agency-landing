@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer/Footer";
 import { Hero } from "@/components/Hero";
 import { ImageList } from "@/components/imageList/ImageList";
 import { Navbar } from "@/components/layout/navbar/Navbar";
@@ -7,6 +8,8 @@ import { ImageListData } from "@/data/imageList/imageList.data";
 import { ServicesData } from "@/data/services/services.data";
 import { TestimonialsData } from "@/data/testimonials/testimonials.data";
 import Head from "next/head";
+
+export const MainContentId = "main";
 
 export default function Home() {
   return (
@@ -20,9 +23,12 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <Services services={ServicesData.Services} />
-      <Testimonials testimonials={TestimonialsData.Testimonials} />
-      <ImageList images={ImageListData.Items} />
+      <main id={MainContentId}>
+        <Services services={ServicesData.Services} />
+        <Testimonials testimonials={TestimonialsData.Testimonials} />
+        <ImageList images={ImageListData.Items} />
+      </main>
+      <Footer />
     </>
   );
 }
