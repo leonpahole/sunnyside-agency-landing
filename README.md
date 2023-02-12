@@ -10,6 +10,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
     - [Setup](#setup)
     - [Links](#links)
   - [My process](#my-process)
+    - [Things I've done in this project that I haven't done before:](#things-ive-done-in-this-project-that-i-havent-done-before)
     - [Built with](#built-with)
   - [Author](#author)
 
@@ -36,6 +37,11 @@ yarn build
 ## My process
 
 In this project, I was focusing on implementing the page as fast as possible using Tailwind.
+
+### Things I've done in this project that I haven't done before:
+
+- Used :before (no pun intended)
+- Made a triangle using CSS
 
 ### Built with
 
