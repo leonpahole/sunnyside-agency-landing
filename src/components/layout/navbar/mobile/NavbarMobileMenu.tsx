@@ -26,7 +26,7 @@ export const NavbarMobileMenu = () => {
          before:content[''] 
          absolute right-0 flex flex-col items-stretch justify-center gap-8 bg-light py-10 px-2 text-center transition-opacity 
          before:absolute before:-top-5 before:right-0 before:h-0 before:w-0 before:border-12 before:border-l-transparent before:border-t-transparent before:border-r-white before:border-b-white 
-         ${isOpen ? "opacity-100" : "opacity-0"}`}
+         ${isOpen ? "block opacity-100" : "hidden opacity-0"}`}
         style={{
           left: `calc(-100vw + ${
             IconHamburger.width +
