@@ -10,4 +10,5 @@ export const barlow = Barlow({
 export const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
+  display: "swap",
 });
